@@ -1,7 +1,7 @@
 def encode(pw):
     encoded_pw = ''
     for i in range(len(pw)):
-        encoded_pw += str(((int(pw[i]) - 3) % 10))
+        encoded_pw += str(((int(pw[i]) + 3) % 10))
 
     return encoded_pw
 
